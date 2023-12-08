@@ -13,3 +13,13 @@ export const authOptions = {
 };
 
 export default NextAuth(authOptions);
+
+// export const authOptions = {
+//   providers: [
+//     GithubProvider({
+//       clientId: 'Github에서 발급받은ID',
+//       clientSecret: 'Github에서 발급받은Secret',
+//     }),
+//   ],
+//   secret: 'jwt 생성 시 쓰는 암호',
+// };
