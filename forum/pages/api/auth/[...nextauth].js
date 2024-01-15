@@ -21,5 +21,5 @@ export default NextAuth(authOptions);
 //       clientSecret: 'Github에서 발급받은Secret',
 //     }),
 //   ],
-//   secret: 'jwt 생성 시 쓰는 암호',
+//   secret: 'jwt 생성 시 쓰는 암호',  // 소셜 로그인은 JWT 방식 사용
 // };
