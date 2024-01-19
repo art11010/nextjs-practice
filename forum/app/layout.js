@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
+import LoginBtn from './LoginBtn';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
           <div className="flex gap-4">
             <Link href="/list">List</Link>
             <Link href="/write">Write</Link>
-            <button>Login</button>
+            <LoginBtn />
           </div>
         </nav>
         <main className="px-10">{children}</main>
