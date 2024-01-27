@@ -23,7 +23,10 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <nav className="py-4 px-10 flex justify-between gap-5 w-full">
-          <Link href="/">Home</Link>
+          <div className="flex gap-4">
+            <Link href="/">Home</Link>
+            <Link href="/main">Main</Link>
+          </div>
           <div className="flex gap-4">
             <Link href="/list">List</Link>
             <Link href="/write">Write</Link>
