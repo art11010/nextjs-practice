@@ -30,7 +30,7 @@ export default async function RootLayout({ children }) {
           <div className="flex gap-4">
             <Link href="/list">List</Link>
             <Link href="/write">Write</Link>
-            <LoginBtn />
+            <LoginBtn session={session} />
           </div>
         </nav>
         <main className="px-10">{children}</main>

@@ -9,10 +9,10 @@ import Image from 'next/image';
 
 export default function Main() {
   // client component 로그인 된 유저 정보 출력
-  const session = useSession();
-  if (session) {
-    console.log(session);
-  }
+  // const session = useSession();
+  // if (session) {
+  //   console.log(session);
+  // }
 
   return (
     <div className="flex flex-col gap-7 py-10 w-full items-center">
