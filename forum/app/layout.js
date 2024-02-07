@@ -31,6 +31,7 @@ export default async function RootLayout({ children }) {
             <Link href="/list">List</Link>
             <Link href="/write">Write</Link>
             <LoginBtn session={session} />
+            {session && <p className="font-semibold">{session?.user?.name}</p>}
           </div>
         </nav>
         <main className="px-10">{children}</main>
