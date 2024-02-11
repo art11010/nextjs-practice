@@ -15,9 +15,9 @@ export const metadata = {
 export default async function RootLayout({ children }) {
   // server component 로그인 된 유저 정보 출력
   const session = await getServerSession(authOptions);
-  if (session) {
-    console.log(session);
-  }
+  // if (session) {
+  //   console.log(session);
+  // }
 
   return (
     <html lang="en">
