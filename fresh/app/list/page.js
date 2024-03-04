@@ -1,4 +1,9 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function List() {
+  const [count, setCount] = useState([0, 0, 0]);
   const 상품 = ['Tomatoes', 'Pasta', 'Coconut'];
   return (
     <div className="py-10">
@@ -11,7 +16,33 @@ export default function List() {
           >
             {item}
             <img src={`/food${index}.png`} alt="" />
-            {/* <Image src={food} alt="" /> */}
+            <div className="flex justify-center gap-2">
+              <button
+                className="px-1 bg-lime-800 rounded-md text-white"
+                onClick={() =>
+                  setCount((prev) => {
+                    const copy = [...prev];
+                    copy[index]--;
+                    return copy;
+                  })
+                }
+              >
+                -
+              </button>
+              <span>{count[index]}</span>
+              <button
+                className="px-1 bg-lime-800 rounded-md text-white"
+                onClick={() =>
+                  setCount((prev) => {
+                    const copy = [...prev];
+                    copy[index]++;
+                    return copy;
+                  })
+                }
+              >
+                +
+              </button>
+            </div>
           </li>
         ))}
       </ul>
