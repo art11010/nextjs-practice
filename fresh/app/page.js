@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col gap-5 py-10 w-full items-center">
+      <div className="flex flex-col gap-7 py-10 w-full items-center">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
@@ -20,7 +20,7 @@ export default function Home() {
           height={24}
           priority
         />
-      </main>
+      </div>
     </>
   );
 }
