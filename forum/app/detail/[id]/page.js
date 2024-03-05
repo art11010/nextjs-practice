@@ -6,7 +6,7 @@ export default async function Detail(props) {
   const item = await db
     .collection('post')
     .findOne({ _id: new ObjectId(props.params.id) });
-  console.log(props);
+  // console.log(props);
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1 p-4 text-center bg-black rounded-lg shadow-lg dark:text-black dark:bg-white">
