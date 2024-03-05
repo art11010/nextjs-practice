@@ -6,10 +6,10 @@ export default async function Home() {
   const db = client.db('forum');
 
   const result = await db.collection('post').find().toArray();
-  console.log(result);
+  // console.log(result);
 
   return (
-    <main className="flex flex-col gap-7 py-10 w-full items-center">
+    <div className="flex flex-col gap-7 py-10 w-full items-center">
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
         src="/next.svg"
@@ -26,6 +26,6 @@ export default async function Home() {
         height={24}
         priority
       />
-    </main>
+    </div>
   );
 }
