@@ -1,8 +1,9 @@
 import { MongoClient } from 'mongodb';
 
-const url = process.env.MONGODB_URI;
+const url = process.env.MONGODB_URL;
+
 const options = {
-  useNewUrlParser: true,
+  // useNewUrlParser: true,
 };
 let connectDB;
 
