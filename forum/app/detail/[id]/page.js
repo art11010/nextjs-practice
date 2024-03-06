@@ -11,7 +11,7 @@ export default async function Detail(props) {
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1 p-4 text-center bg-black rounded-lg shadow-lg dark:text-black dark:bg-white">
         <h4 className="font-semibold">상세 페이지</h4>
-        <div className="mt-2 pt-2 border-t border-gray-300">
+        <div className="mt-4 pt-4 border-t border-gray-300">
           <h6>{item.title}</h6>
           <p className="text-sm">{item.content}</p>
         </div>
