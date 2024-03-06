@@ -15,9 +15,10 @@ export default async function List() {
         >
           <Link href={`/detail/${item._id}`}>
             <h4>{item.title}</h4>
-            <p className="text-sm text-gray-500">{item.content}</p>
           </Link>
-          <DetailLink />
+          <DetailLink href={`/detail/${item._id}`}>
+            <p className="text-left text-sm text-gray-500">{item.content}</p>
+          </DetailLink>
         </div>
       ))}
     </div>
