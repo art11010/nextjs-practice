@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     }
 
     try {
-      db.collection('post').insertOne(req.body);
+      await db.collection('post').insertOne(req.body);
       res.redirect(302, '/list');
       // res.status(200).json('저장 완료');
     } catch (error) {

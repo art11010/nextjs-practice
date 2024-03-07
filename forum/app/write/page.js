@@ -1,11 +1,4 @@
-'use client';
-
-import { useState } from 'react';
-
 export default function Write() {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
-
   return (
     <div>
       <h4>글 작성</h4>
@@ -16,17 +9,11 @@ export default function Write() {
             name="title"
             className="text-black"
             placeholder="title"
-            value={title}
-            onChange={(e) => {
-              setTitle(e.target.value);
-            }}
           />
           <textarea
             name="content"
             className="text-black"
             placeholder="content"
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
           ></textarea>
         </div>
         <button type="submit" className="mt-2">
