@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   const list = await db.collection('post').find().toArray();
   const date = new Date();
   if (req.method == 'GET') {
-    // res.status(200).json(list);
-    res.status(200).json(date);
+    res.status(200).json(list);
+    // res.status(200).json(date);
   }
   if (req.method == 'POST') {
     res.status(200).json({ hi: '바보' });

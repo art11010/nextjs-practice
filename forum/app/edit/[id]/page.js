@@ -9,7 +9,7 @@ export default async function Edit(props) {
 
   return (
     <div>
-      <h4>글 수정</h4>
+      <h4>게시글 수정</h4>
       <form action="/api/post/edit" method="POST">
         <div className="flex flex-col items-start gap-4 mt-4 pt-4 border-t border-gray-300">
           <input type="hidden" name="_id" defaultValue={item?._id} />

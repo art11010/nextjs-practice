@@ -1,7 +1,7 @@
 export default function Write() {
   return (
     <div>
-      <h4>글 작성</h4>
+      <h4>게시글 작성</h4>
       <form action="/api/post/new" method="POST">
         <div className="flex flex-col items-start gap-4 mt-4 pt-4 border-t border-gray-300">
           <input
