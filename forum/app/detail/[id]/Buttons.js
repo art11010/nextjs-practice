@@ -6,6 +6,14 @@ export default function Buttons({ id }) {
   return (
     <div className="flex justify-end gap-4">
       <button
+        onClick={() => {
+          // fetch('/api/test?name=lee&age=20');
+          fetch('/api/test/어쩌구');
+        }}
+      >
+        데이터 전송
+      </button>
+      {/* <button
         className="text-sm text-gray-500"
         onClick={() => {
           fetch('/api/post/delete', {
@@ -29,7 +37,7 @@ export default function Buttons({ id }) {
         }}
       >
         삭제
-      </button>
+      </button> */}
       <Link href={`/edit/${id}`} className="text-sm text-gray-500">
         수정
       </Link>
