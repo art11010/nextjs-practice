@@ -8,7 +8,7 @@ export default function Buttons({ id }) {
       <button
         onClick={() => {
           // fetch('/api/test?name=lee&age=20');
-          fetch('/api/test/어쩌구');
+          fetch('/api/test/lee');
         }}
       >
         데이터 전송

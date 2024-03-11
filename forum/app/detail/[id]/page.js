@@ -1,6 +1,6 @@
 import { connectDB } from '@/util/database';
 import { ObjectId } from 'mongodb';
-import Buttons from './buttons';
+import Buttons from './Buttons';
 
 export default async function Detail(props) {
   const db = (await connectDB).db('forum');
