@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+// import { Inter } from 'next/font/google';
+// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Template',
@@ -11,9 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* <body className={inter.className}> */}
+      <body>
         <div className="flex justify-center items-center w-screen h-screen">
-          <div className="w-[375px] h-[667px] bg-black">{children}</div>
+          <div className="w-[375px] h-[667px] text-white bg-[url('/bg.jpg')] bg-cover bg-center overflow-auto">
+            {children}
+          </div>
         </div>
       </body>
     </html>
