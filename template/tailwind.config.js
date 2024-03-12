@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['GmarketSansMedium', 'sans-serif'],
-      serif: ['GmarketSansMedium', 'serif'],
+      sans: ['GmarketSans', 'sans-serif'],
+      serif: ['GmarketSans', 'serif'],
     },
     extend: {
       backgroundImage: {
