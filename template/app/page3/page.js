@@ -4,7 +4,7 @@ export default function Page3() {
       <header className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
         행사장 안내
       </header>
-      <main className="px-8">
+      <main className="px-6">
         <div className="border-t border-neutral-600"></div>
 
         <section className="py-5">

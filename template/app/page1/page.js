@@ -4,7 +4,7 @@ export default function Page1() {
       <header className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
         인사말
       </header>
-      <main className="px-8">
+      <main className="px-6">
         <div className="mb-5 border-t border-neutral-600"></div>
 
         <section>

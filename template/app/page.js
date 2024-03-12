@@ -5,7 +5,7 @@ export default function Home() {
         <img src="/main/header_1.png" alt="logo 1" />
         <img src="/main/header_2.png" alt="logo 2" />
       </header>
-      <main className="px-8">
+      <main className="px-6">
         <section>
           <h1 className="mt-10 text-center text-8xl text-transparent bg-gradient-to-r from-white to-neutral-700 bg-clip-text font-['KBIZHanmaumMyungjo']">
             AI

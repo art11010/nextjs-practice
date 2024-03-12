@@ -4,7 +4,7 @@ export default function Page4() {
       <header className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
         역대 AI
       </header>
-      <main className="px-8">
+      <main className="px-6">
         <div className="border-t border-neutral-600"></div>
 
         <section className="pt-5">
