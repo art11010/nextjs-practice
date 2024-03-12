@@ -21,7 +21,9 @@ export default function Home() {
             <img src="/main/logo_2.png" alt="logo 2" />
           </div>
         </section>
+
         <div className="mt-8 mb-5 border-t border-neutral-600"></div>
+
         <section>
           <div className="grid grid-cols-2 gap-3">
             <button
@@ -68,6 +70,7 @@ export default function Home() {
             </button>
           </div>
         </section>
+
         <section>
           <h2 className="mt-5 text-center text-2xl">Program Book</h2>
           <div className="mt-5 flex flex-col gap-2">

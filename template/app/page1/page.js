@@ -1,18 +1,19 @@
 export default function Page1() {
   return (
     <>
-      <h1 className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
+      <header className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
         인사말
-      </h1>
+      </header>
       <main className="px-8">
         <div className="mb-5 border-t border-neutral-600"></div>
+
         <section>
-          <strong className="block text-center text-sm font-bold">
-            서울특별시가 주최하고 서울 AI 허브가 주관하는
-            <br />
-            국내 대표 AI 컨벤션“AI SEOUL 2024 ”
-          </strong>
-          <p className="mt-6 text-center text-sm">
+          <p className="text-center text-sm">
+            <strong className="pb-6 block text-center text-sm">
+              서울특별시가 주최하고 서울 AI 허브가 주관하는
+              <br />
+              국내 대표 AI 컨벤션“AI SEOUL 2024 ”
+            </strong>
             날로 발전하는 인공지능(AI) 기술은 비단 산업을 넘어 공공의 혁신과 더
             나은 내일을 이끌어낼 수 있다고 믿습니다.
             <br />
