@@ -1,5 +1,5 @@
+import Nav from './Nav';
 import './globals.css';
-
 // import { Inter } from 'next/font/google';
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -11,11 +11,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <body className={inter.className}> */}
       <body>
-        <div className="flex justify-center items-center w-screen h-screen">
+        <Nav />
+        <div className="flex justify-center items-center w-full">
           <div className="w-[375px] h-[667px] text-white bg-[url('/bg.jpg')] bg-cover bg-center overflow-auto">
             {children}
+
+            <footer className="py-6">
+              <p className="text-center text-xl text-transparent bg-gradient-to-b from-white to-neutral-900 bg-clip-text font-['KBIZHanmaumMyungjo']">
+                AI SEOUL 2024
+              </p>
+            </footer>
           </div>
         </div>
       </body>

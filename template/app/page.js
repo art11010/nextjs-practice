@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function Home() {
   return (
     <>
@@ -26,48 +24,48 @@ export default function Home() {
         <div className="mt-8 mb-5 border-t border-neutral-600"></div>
         <section>
           <div className="grid grid-cols-2 gap-3">
-            <Link
-              href="/page1"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               인사말
               <span className="w-full h-7 bg-[url('/main/button_1.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
-            <Link
-              href="/page2"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            </button>
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               행사 개요
               <span className="w-full h-7 bg-[url('/main/button_2.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
-            <Link
-              href="/page3"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            </button>
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               행사장 안내
               <span className="w-full h-7 bg-[url('/main/button_3.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
-            <Link
-              href="/page4"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            </button>
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               역대 AI SEOUL
               <span className="w-full h-7 bg-[url('/main/button_4.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
-            <Link
-              href="/page5"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            </button>
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               참여 이벤트
               <span className="w-full h-7 bg-[url('/main/button_5.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
-            <Link
-              href="/page6"
-              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl"
+            </button>
+            <button
+              type="button"
+              className="flex flex-col justify-between gap-5 p-4 text-left text-sm bg-gradient-to-br from-neutral-800 from-10% to-neutral-600 rounded-xl shadow-md"
             >
               연사 소개
               <span className="w-full h-7 bg-[url('/main/button_6.png')] bg-contain bg-right bg-no-repeat"></span>
-            </Link>
+            </button>
           </div>
         </section>
         <section>
@@ -97,11 +95,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="py-6">
-        <p className="text-center text-xl text-transparent bg-gradient-to-b from-white to-neutral-700 bg-clip-text font-['KBIZHanmaumMyungjo']">
-          AI SEOUL 2024
-        </p>
-      </footer>
     </>
   );
 }

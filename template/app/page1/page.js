@@ -1,9 +1,9 @@
 export default function Page1() {
   return (
     <>
-      <header className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
+      <h1 className="py-10 text-center text-3xl font-bold bg-[url('/title_bg.png')] bg-cover bg-center">
         인사말
-      </header>
+      </h1>
       <main className="px-8">
         <div className="mb-5 border-t border-neutral-600"></div>
         <section>
@@ -38,11 +38,6 @@ export default function Page1() {
           </p>
         </section>
       </main>
-      <footer className="py-6">
-        <p className="text-center text-xl text-transparent bg-gradient-to-b from-white to-neutral-700 bg-clip-text font-['KBIZHanmaumMyungjo']">
-          AI SEOUL 2024
-        </p>
-      </footer>
     </>
   );
 }
