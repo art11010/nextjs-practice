@@ -34,7 +34,7 @@ export default function Page3() {
               <img className="w-5" src="/page3/ico_subway.png" alt="subway" />
               지하철 정보
             </h4>
-            <div className="mt-4 flex gap-4">
+            <div className="mt-4 flex justify-center gap-4">
               <div className="flex flex-col gap-2 items-center text-sm">
                 <span className="flex justify-center items-center w-4 h-4 text-center text-xs bg-blue-800 rounded-full">
                   1
