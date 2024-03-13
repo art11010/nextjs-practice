@@ -23,13 +23,13 @@ export default function Page4() {
             "
             >
               2022
-              <span className="mt-2 text-center text-[10px]">
+              <div className="mt-2 text-center text-[10px]">
                 <strong className="text-xs">
                   AI SEOUL 2022, AI로 그려보는 서울의 미래
                 </strong>
                 <br />
                 2022.11.03 - 11.04 I 양재 aT Center
-              </span>
+              </div>
             </h3>
             <div className="flex flex-col items-center mt-4 pb-5">
               <img className="w-40" src="/page4/poster_1.png" alt="poster 1" />
@@ -50,7 +50,7 @@ export default function Page4() {
               className="py-4 flex justify-center items-center gap-3 w-full text-sm text-black bg-neutral-200 rounded-full"
             >
               행사 들여다보기
-              <span className="w-5 h-5 bg-[url('/ico_download.png')] bg-cover bg-center"></span>
+              <div className="w-5 h-5 bg-[url('/ico_download.png')] bg-cover bg-center"></div>
             </button>
           </div>
           <div className="mt-8">
@@ -68,11 +68,11 @@ export default function Page4() {
             "
             >
               2021
-              <span className="mt-2 text-center text-[10px]">
+              <div className="mt-2 text-center text-[10px]">
                 <strong className="text-xs">2021 AI Concert</strong>
                 <br />
                 2021.12.15 I Setec 1층 컨벤션홀
-              </span>
+              </div>
             </h3>
             <div className="flex flex-col items-center mt-4 pb-5">
               <img className="w-40" src="/page4/poster_2.png" alt="poster 2" />
@@ -93,7 +93,7 @@ export default function Page4() {
               className="py-4 flex justify-center items-center gap-3 w-full text-sm text-black bg-neutral-200 rounded-full"
             >
               행사 들여다보기
-              <span className="w-5 h-5 bg-[url('/ico_download.png')] bg-cover bg-center"></span>
+              <div className="w-5 h-5 bg-[url('/ico_download.png')] bg-cover bg-center"></div>
             </button>
           </div>
         </section>

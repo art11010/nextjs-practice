@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Nav />
-        <div className="flex justify-center items-center w-full">
-          <div className="w-[375px] h-[667px] text-white bg-[url('/bg.jpg')] bg-cover bg-center overflow-auto">
+        <div className="flex justify-center items-center w-full bg-[#4a4a4a]">
+          <div className="w-[375px] h-[667px] text-white _bg-[url('/bg.jpg')] bg-[url('https://file.differoute.io/cheese/0o1710306951361b/container/20240313052904_bg.jpg')] bg-cover bg-center overflow-auto">
             {children}
 
             <footer className="py-6">

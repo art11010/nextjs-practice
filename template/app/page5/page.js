@@ -37,95 +37,80 @@ export default function Page5() {
         </section>
         <section className="mt-6">
           <h3 className="text-center font-bold">경품 목록</h3>
-          <table className="mt-4 w-full">
-            <colgroup>
-              <col width="25%" />
-              <col width="50%" />
-              <col width="25%" />
-            </colgroup>
-            <thead>
-              <tr>
-                <th className="py-2 text-xs text-black bg-neutral-200 rounded-tl-md">
-                  추첨인원
-                </th>
-                <th className="py-2 text-xs text-black bg-neutral-200">
-                  경품명
-                </th>
-                <th className="py-2 text-xs text-black bg-neutral-200 rounded-tr-md">
-                  경품사진
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="text-center border-b border-neutral-600">
-                <td className="p-2 text-xs" height="100%">
-                  1명
-                </td>
-                <td className="p-2 text-xs">
-                  갤럭시 워치 6 클래식 <br />
-                  43mm 블루투스
-                </td>
-                <td className="p-2 text-xs">
-                  <img
-                    className="inline w-14"
-                    src="/page5/gift_1.png"
-                    alt="gift 1"
-                  />
-                </td>
-              </tr>
-              <tr className="text-center border-b border-neutral-600">
-                <td className="p-2 text-xs" height="100%">
-                  1명
-                </td>
-                <td className="p-2 text-xs">
-                  소니 <br />
-                  노이즈캔슬링 헤드폰 <br />
-                  WH-CH720N
-                </td>
-                <td className="p-2 text-xs">
-                  <img
-                    className="inline w-14"
-                    src="/page5/gift_2.png"
-                    alt="gift 2"
-                  />
-                </td>
-              </tr>
-              <tr className="text-center border-b border-neutral-600">
-                <td className="p-2 text-xs" height="100%">
-                  1명
-                </td>
-                <td className="p-2 text-xs">
-                  LG전자 퓨리케어 <br />
-                  공기청정기 알파 <br />
-                  <span className="text-[10px]">인공지능센서 PSHNACO1</span>
-                </td>
-                <td className="p-2 text-xs">
-                  <img
-                    className="inline w-14"
-                    src="/page5/gift_3.png"
-                    alt="gift 3"
-                  />
-                </td>
-              </tr>
-              <tr className="text-center border-b border-neutral-600">
-                <td className="p-2 text-xs" height="100%">
-                  2명
-                </td>
-                <td className="p-2 text-xs">
-                  구글 네스트 <br />
-                  미니 인공지능 <br />
-                  AI 블루투스 스피커
-                </td>
-                <td className="p-2 text-xs">
-                  <img
-                    className="inline w-14"
-                    src="/page5/gift_4.png"
-                    alt="gift 4"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="mt-5 grid grid-cols-10 text-center">
+            <div className="col-span-2 py-2 text-center text-xs text-black font-bold bg-neutral-200 rounded-tl-md">
+              추첨인원
+            </div>
+            <div className="col-span-5 py-2 text-center text-xs text-black font-bold bg-neutral-200">
+              추첨인원
+            </div>
+            <div className="col-span-3 py-2 text-center text-xs text-black font-bold bg-neutral-200 rounded-tr-md">
+              경품사진
+            </div>
+
+            <div className="col-span-2 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              1명
+            </div>
+            <div className="col-span-5 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              갤럭시 워치 6 클래식 <br />
+              43mm 블루투스
+            </div>
+            <div className="col-span-3 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              <img
+                className="inline w-14"
+                src="/page5/gift_1.png"
+                alt="gift 1"
+              />
+            </div>
+
+            <div className="col-span-2 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              1명
+            </div>
+            <div className="col-span-5 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              소니 <br />
+              노이즈캔슬링 헤드폰 <br />
+              WH-CH720N
+            </div>
+            <div className="col-span-3 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              <img
+                className="inline w-14"
+                src="/page5/gift_2.png"
+                alt="gift 2"
+              />
+            </div>
+
+            <div className="col-span-2 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              1명
+            </div>
+            <div className="col-span-5 flex flex-col justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              LG전자 퓨리케어 <br />
+              공기청정기 알파 <br />
+              <span className="text-[10px]">인공지능센서 PSHNACO1</span>
+            </div>
+            <div className="col-span-3 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              <img
+                className="inline w-14"
+                src="/page5/gift_3.png"
+                alt="gift 3"
+              />
+            </div>
+
+            <div className="col-span-2 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              2명
+            </div>
+            <div className="col-span-5 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              구글 네스트 <br />
+              미니 인공지능 <br />
+              AI 블루투스 스피커
+            </div>
+            <div className="col-span-3 flex justify-center items-center py-3 px-2 text-xs border-b border-neutral-600">
+              <img
+                className="inline w-14"
+                src="/page5/gift_4.png"
+                alt="gift 4"
+              />
+            </div>
+          </div>
         </section>
       </main>
     </>
