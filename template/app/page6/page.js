@@ -5,7 +5,7 @@ export default function Page6() {
         연사 소개
       </header>
       <main className="px-6">
-        <div className="border-t border-neutral-600"></div>
+        <hr className="border-t border-neutral-600" />
 
         <section className="mt-5">
           <h5 className="text-center font-bold">· 개회사, 환영사, 축사 ·</h5>

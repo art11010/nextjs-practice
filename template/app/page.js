@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="mt-8 mb-5 border-t border-neutral-600"></div>
+        <hr className="mt-8 mb-5 border-t border-neutral-600" />
 
         <section>
           <div className="grid grid-cols-2 gap-3">

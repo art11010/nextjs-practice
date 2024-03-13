@@ -5,7 +5,7 @@ export default function Page3() {
         행사장 안내
       </header>
       <main className="px-6">
-        <div className="border-t border-neutral-600"></div>
+        <hr className="border-t border-neutral-600" />
 
         <section className="py-5">
           <h3 className="text-center">

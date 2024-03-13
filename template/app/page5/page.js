@@ -5,7 +5,7 @@ export default function Page5() {
         참여 이벤트
       </header>
       <main className="px-6">
-        <div className="border-t border-neutral-600"></div>
+        <hr className="border-t border-neutral-600" />
 
         <section className="mt-6">
           <h3 className="text-center font-bold">AI SEOUL 2024 참가자 이벤트</h3>

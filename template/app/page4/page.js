@@ -5,7 +5,7 @@ export default function Page4() {
         역대 AI
       </header>
       <main className="px-6">
-        <div className="border-t border-neutral-600"></div>
+        <hr className="border-t border-neutral-600" />
 
         <section className="pt-5">
           <div>

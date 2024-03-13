@@ -5,7 +5,7 @@ export default function Page2() {
         행사 개요
       </header>
       <main className="px-6">
-        <div className="mb-5 border-t border-neutral-600"></div>
+        <hr className="mb-5 border-t border-neutral-600" />
 
         <section>
           <h2 className="py-4 px-2 text-center font-bold bg-gradient-to-br from-neutral-800 from-50% to-neutral-700 rounded-xl shadow-md">

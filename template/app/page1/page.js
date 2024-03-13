@@ -5,7 +5,7 @@ export default function Page1() {
         인사말
       </header>
       <main className="px-6">
-        <div className="mb-5 border-t border-neutral-600"></div>
+        <hr className="mb-5 border-t border-neutral-600" />
 
         <section>
           <p className="text-center text-sm">
