@@ -25,7 +25,7 @@ export default function Buttons({ id }) {
             if (res.status === 200) {
               // 성공 시 실행 코드
               const data = await res.json();
-            } else {
+            } else if (res.status === 401) {
               // 서버에서 에러코드 전송 시 실행 코드
               const data = await res.json();
               throw new Error(data.message);
