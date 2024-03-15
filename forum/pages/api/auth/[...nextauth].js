@@ -11,6 +11,7 @@ export const authOptions = {
       clientSecret: process.env.GITHUB_SECRET,
     }),
     // ...add more providers here
+    // CredentialsProvider : JWT만 사용 가능
   ],
   secret: 'qwer1234',
   adapter: MongoDBAdapter(connectDB),
@@ -25,7 +26,7 @@ export default NextAuth(authOptions);
 //       clientSecret: 'Github에서 발급받은Secret',
 //     }),
 //   ],
-//   secret: 'jwt 생성 시 쓰는 암호',  // 소셜 로그인은 기본적으로 JWT 방식 사용
+//   secret: 'JWT 생성 시 쓰는 암호',  // 소셜 로그인은 기본적으로 JWT 방식 사용
 // };
 
 // MongoDBAdapter를 사용하여 로그인 시 MongoDB에 3개의 컬렉션이 생성된다
