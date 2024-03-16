@@ -6,7 +6,7 @@ export default function Home() {
         <img className="h-full" src="/main/header_2.png" alt="logo 2" />
       </header>
       <main className="px-6">
-        <section>
+        <section className="intersect:animate-flip-up">
           <h1 className="mt-10 text-center text-8xl text-transparent bg-gradient-to-r from-white to-neutral-700 bg-clip-text font-['KBIZHanmaumMyungjo']">
             AI
             <br />

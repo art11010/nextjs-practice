@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#4a4a4a]">
         <Nav />
         <div className="flex justify-center items-center w-full bg-[#4a4a4a]">
           <div className="w-[375px] h-[667px] text-white _bg-[url('/bg.jpg')] bg-[url('https://file.differoute.io/cheese/0o1710306951361b/container/20240313052904_bg.jpg')] bg-cover bg-center overflow-auto">
