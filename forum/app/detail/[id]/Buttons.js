@@ -7,8 +7,8 @@ export default function Buttons({ id }) {
     <div className="flex justify-end gap-4">
       <button
         onClick={() => {
-          // fetch('/api/test?name=lee&age=20');
-          fetch('/api/test/lee');
+          fetch('/api/test?name=lee&age=20');
+          // fetch('/api/test/lee');
         }}
       >
         데이터 전송
