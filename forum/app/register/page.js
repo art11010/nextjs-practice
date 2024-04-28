@@ -6,12 +6,18 @@ export default function Register() {
         <div className="flex flex-col items-start gap-4 mt-4 pt-4 border-t border-gray-300">
           <input
             type="text"
-            name="id"
+            name="name"
             className="text-black"
-            placeholder="ID"
+            placeholder="Name"
           />
           <input
-            type="text"
+            type="email"
+            name="email"
+            className="text-black"
+            placeholder="Email"
+          />
+          <input
+            type="password"
             name="password"
             className="text-black"
             placeholder="Password"
