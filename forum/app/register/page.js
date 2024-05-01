@@ -11,7 +11,7 @@ export default function Register() {
             placeholder="Name"
           />
           <input
-            type="email"
+            type="text"
             name="email"
             className="text-black"
             placeholder="Email"

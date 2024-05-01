@@ -1,3 +1,6 @@
+import { connectDB } from '@/util/database';
+import bcrypt from 'bcrypt';
+
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const db = (await connectDB).db('forum');
@@ -7,8 +10,9 @@ export default async function handler(req, res) {
     }
 
     try {
+      req.body.password = await bcrypt.hash(req.body.password, 10);
       await db.collection('user').insertOne(req.body);
-      res.redirect(302, '/home');
+      res.redirect(302, '/');
     } catch (error) {
       console.error(error);
     }
