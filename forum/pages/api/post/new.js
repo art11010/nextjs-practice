@@ -6,11 +6,11 @@ export default async function handler(req, res) {
   const session = await getServerSession(req, res, authOptions);
   // 서버 기능 내부에서 getServerSession를 사용할 경우 req,res 도 같이 보내줘야 한다
 
-  if (session) {
-    req.body.author = session.user.email;
-  }
-
   if (req.method == 'POST') {
+    if (session) {
+      req.body.author = session.user.email;
+    }
+
     const db = (await connectDB).db('forum');
 
     if (!req.body.title || !req.body.content) {

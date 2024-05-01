@@ -8,8 +8,8 @@ export default function LoginBtn({ session }) {
     <>
       {!session ? (
         <>
-          <button onClick={() => signIn()}>Login</button>
           <Link href="/register">Signup</Link>
+          <button onClick={() => signIn()}>Login</button>
         </>
       ) : (
         <button onClick={() => signOut()}>Logout</button>

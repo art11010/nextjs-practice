@@ -24,7 +24,9 @@ export default function Buttons({ id }) {
 
             if (res.status === 200) {
               // 성공 시 실행 코드
-              const data = await res.json();
+              // const data = await res.json();
+              // router.push('/list');
+              window.location.href = '/list';
             } else if (res.status === 401) {
               // 서버에서 에러코드 전송 시 실행 코드
               const data = await res.json();
