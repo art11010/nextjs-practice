@@ -16,7 +16,10 @@ export default async function handler(req, res) {
       return res.status(401).json({ message: 'Please sign in' });
     }
 
-    if (session.user.email !== findPost.author) {
+    if (
+      session.user.email !== findPost.author &&
+      session.user.role !== 'admin'
+    ) {
       return res.status(401).json({ message: '권한이 없습니다.' });
     }
 
