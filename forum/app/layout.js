@@ -29,13 +29,9 @@ export default async function RootLayout({ children }) {
           </div>
           <div className="flex gap-4">
             <Link href="/list">List</Link>
-            <Link href="/write">Write</Link>
-            <div className="ml-4 flex gap-4">
-              <LoginBtn session={session} />
-              {session && (
-                <p className="font-semibold">{session?.user?.name}</p>
-              )}
-            </div>
+            {session && <Link href="/write">Write</Link>}
+            <LoginBtn session={session} />
+            {session && <p className="font-semibold">{session?.user?.name}</p>}
           </div>
         </nav>
         <main className="px-10">{children}</main>
