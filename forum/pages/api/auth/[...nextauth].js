@@ -12,7 +12,6 @@ export const authOptions = {
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
-    // ...add more providers here
 
     // CredentialsProvider : 쇼셜 뿐만 아니라 아이디, 비번으로 로그인 가능하게 해줌 (jwt만 사용 가능)
     CredentialsProvider({
