@@ -1,6 +1,7 @@
 import { connectDB } from '@/util/database';
 import { ObjectId } from 'mongodb';
 import Buttons from './Buttons';
+import Comment from './Comment';
 
 export default async function Detail(props) {
   const db = (await connectDB).db('forum');
@@ -16,15 +17,7 @@ export default async function Detail(props) {
           <h5>{item?.title}</h5>
           <p className="text-sm">{item?.content}</p>
         </div>
-        <div className="text-left">
-          <div>
-            <h6>댓글</h6>
-          </div>
-          <div>
-            <input type="text" />
-            <button>작성</button>
-          </div>
-        </div>
+        <Comment />
         <Buttons id={item?._id.toString()} />
       </div>
     </div>
