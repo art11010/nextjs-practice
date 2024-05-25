@@ -26,8 +26,6 @@ export default function Comment({ id }) {
               body: JSON.stringify({
                 postId: id,
                 comment,
-                createdAt: new Date(),
-                updatedAt: new Date(),
               }),
             });
           }}
