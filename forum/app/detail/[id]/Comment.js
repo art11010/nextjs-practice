@@ -24,7 +24,7 @@ export default function Comment({ id }) {
             fetch('/api/comment/create', {
               method: 'POST',
               body: JSON.stringify({
-                postId: id,
+                _id: id,
                 comment,
               }),
             });
