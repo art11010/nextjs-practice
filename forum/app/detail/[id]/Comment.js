@@ -23,10 +23,7 @@ export default function Comment({ id }) {
           onClick={() => {
             fetch('/api/comment/create', {
               method: 'POST',
-              body: JSON.stringify({
-                _id: id,
-                comment,
-              }),
+              body: JSON.stringify({ _id: id, comment }),
             });
           }}
         >
