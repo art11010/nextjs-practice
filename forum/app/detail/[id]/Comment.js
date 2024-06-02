@@ -5,6 +5,10 @@ import { useEffect, useState } from 'react';
 export default function Comment({ id }) {
   const [comment, setComment] = useState('');
 
+  useEffect(() => {
+    console.log('id', id);
+  }, [id]);
+
   return (
     <div className="px-4">
       <div>
