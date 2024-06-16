@@ -7,7 +7,11 @@ export default function Comment({ id }) {
   const [comment, setComment] = useState('');
 
   useEffect(() => {
-    console.log('id', id);
+    fetch(`/api/comment/list?_id=${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setCommentList(data);
+      });
   }, [id]);
 
   return (
