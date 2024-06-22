@@ -6,11 +6,11 @@ export default async function handler(req, res) {
     const db = (await connectDB).db('forum');
 
     try {
-      await db
+      const list = await db
         .collection('comment')
         .find({ parent: new ObjectId(req.query._id) })
         .toArray();
-      res.status(200).json('저장 완료');
+      res.status(200).json(list);
     } catch (error) {
       console.error(error);
     }
