@@ -3,8 +3,8 @@
 import { useEffect, useState } from 'react';
 
 export default function Comment({ id }) {
-  const [commentList, setCommentList] = useState([]);
   const [comment, setComment] = useState('');
+  const [commentList, setCommentList] = useState([]);
 
   useEffect(() => {
     fetch(`/api/comment/list?_id=${id}`)
