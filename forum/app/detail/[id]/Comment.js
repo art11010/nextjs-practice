@@ -31,7 +31,12 @@ export default function Comment({ id }) {
             fetch('/api/comment/create', {
               method: 'POST',
               body: JSON.stringify({ _id: id, comment }),
-            });
+            })
+              .then((res) => res.json())
+              .then((data) => {
+                setComment('');
+                setCommentList(data);
+              });
           }}
         >
           작성
@@ -42,7 +47,7 @@ export default function Comment({ id }) {
           <p key={item?._id} className="text-sm">
             {item?.comment}
             <span className="mt-0.5 block text-xs text-gray-400">
-              written by {item?.author}
+              written by {item?.name}
             </span>
           </p>
         ))}

@@ -23,10 +23,14 @@ export default async function handler(req, res) {
         parent: new ObjectId(req.body._id),
         comment: req.body.comment,
         author: session.user.email,
+        name: session.user.name,
       });
 
-      res.status(200).json('저장 완료');
-      // res.redirect(302, `/detail/${req.body.postId}`);
+      const comments = await db
+        .collection('comment')
+        .find({ parent: new ObjectId(req.body._id) })
+        .toArray();
+      return res.status(200).json(comments);
     } catch (error) {
       console.error(error);
     }
